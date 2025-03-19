@@ -30,6 +30,7 @@ class TestLoginPage:
         time.sleep(4)
         print(self.driver.current_url)
         print(self.dashboard_page.account_name_dashboard_get_text())
+        time.sleep(5)
 
     def test_successful_login_instructor(self):
         time.sleep(3)
@@ -40,6 +41,7 @@ class TestLoginPage:
         assert self.driver.current_url == "https://uipm.lms.vertical.id/dashboard"
         time.sleep(4)
         print(self.driver.current_url)
+        time.sleep(5)
 
     def test_successful_login_learner(self):
         time.sleep(3)
